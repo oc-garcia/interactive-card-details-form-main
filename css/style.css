@@ -9,35 +9,53 @@
   --Very_dark_violet: hsl(278, 68%, 11%);
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
 }
 
 .start__status {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 5rem auto;
+  margin: 5rem 5%;
 }
 
 .card__container {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  height: 100%;
 }
 
 .card__front {
   background: url(/images/bg-card-front.png);
-  background-size: cover;
+  padding: 2rem;
+  background-size: auto;
   background-repeat: no-repeat;
+  height: 25vh;
+  width: 75%;
+  align-self: flex-start;
 }
 
 .card__back {
   background: url(/images/bg-card-back.png);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
+  height: 30vh;
+  width: 75%;
+  align-self: flex-end;
+}
+
+.card__security-nr {
+margin-top: 6rem;
+margin-left: 50%;
 }
 
 .form__container {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
 .end__status {
