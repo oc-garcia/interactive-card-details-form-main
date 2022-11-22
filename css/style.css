@@ -24,8 +24,7 @@
 .card__container {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 100%;
+  width: 40%;
 }
 
 .card__front {
@@ -33,29 +32,41 @@
   padding: 2rem;
   background-size: auto;
   background-repeat: no-repeat;
-  height: 25vh;
-  width: 75%;
   align-self: flex-start;
+}
+
+.card__number {
+  color: var(--Light_grayish_violet);
+}
+
+.card__name {
+  color: var(--Light_grayish_violet);
+}
+
+.card__date {
+  color: var(--Light_grayish_violet);
+}
+
+.card__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card__back {
   background: url(/images/bg-card-back.png);
-  background-size: auto;
   background-repeat: no-repeat;
-  height: 30vh;
-  width: 75%;
   align-self: flex-end;
 }
 
 .card__security-nr {
-margin-top: 6rem;
-margin-left: 50%;
+color: var(--Light_grayish_violet);
 }
 
 .form__container {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 
 .end__status {
