@@ -64,7 +64,7 @@
 }
 
 .card__security-nr {
-  color: var(--Light_grayish_violet);
+  color: var(--Light_grayish_violet);;
 }
 
 .form__container {
