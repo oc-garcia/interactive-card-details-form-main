@@ -60,13 +60,87 @@
 }
 
 .card__security-nr {
-color: var(--Light_grayish_violet);
+  color: var(--Light_grayish_violet);
 }
 
 .form__container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
+}
+
+.form__name-label {
+  color: var(--Dark_grayish_violet);
+}
+
+#form__name {
+  padding: 0.5rem;
+}
+
+#form__name:active {
+  border-color: var(--Linear_gradient);
+}
+
+.form__number-label {
+  margin-top: 1rem;
+}
+
+.form__number-label {
+  color: var(--Dark_grayish_violet);
+}
+
+#form__number {
+  padding: 0.5rem;
+}
+
+#form__number:hover {
+  box-shadow: var(--Linear_gradient);
+}
+
+.labels {
+  margin-top: 1rem;
+}
+
+.date__label {
+  color: var(--Dark_grayish_violet);
+}
+
+.cvc__label {
+  margin-left: 0.7rem;
+  color: var(--Dark_grayish_violet);
+}
+
+.inputs {
+  display: flex;
+}
+
+#form__date-month {
+  padding: 0.5rem;
+  width: 20%;
+}
+
+#form__date-year {
+  padding: 0.5rem;
+  width: 20%;
+  margin-left: 0.5rem;
+}
+
+#form__cvc {
+  padding: 0.5rem;
+  width: 50%;
+  margin-left: 0.5rem;
+}
+
+.form__submit {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: var(--Very_dark_violet);
+  color: var(--White);
+  border-radius: 5px;
+}
+
+.form__submit:hover {
+  cursor: pointer;
 }
 
 .end__status {
