@@ -4,6 +4,7 @@ const numberInput = document.getElementById("form__number");
 const cardMonthInput = document.getElementById("form__date-month");
 const cardYearInput = document.getElementById("form__date-year");
 const cardCvcInput = document.getElementById("form__cvc");
+const btnSubmit = document.getElementById("btn__submit");
 
 // Card displayed
 const displayCardNumber = document.getElementById("card__number");
@@ -17,6 +18,7 @@ numberInput.addEventListener("input", changeNumber);
 cardMonthInput.addEventListener("input", changeMonth);
 cardYearInput.addEventListener("input", changeYear);
 cardCvcInput.addEventListener("input", changeCVC);
+btnSubmit.addEventListener("click", submitForm);
 
 function changeName() {
   if ((displayCardName.innerHTML = nameInput.value)) {
@@ -51,9 +53,14 @@ function changeYear() {
 }
 
 function changeCVC() {
-  if (displayCardCvc.innerHTML = cardCvcInput.value) {
+  if ((displayCardCvc.innerHTML = cardCvcInput.value)) {
     displayCardCvc.innerHTML = cardCvcInput.value;
   } else {
     displayCardCvc.innerHTML = "e.g. 123";
   }
+}
+
+function submitForm() {
+  document.getElementById("form").className = "hide__container";
+  document.getElementById("thanks__card").className = "end__status";
 }

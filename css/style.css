@@ -64,7 +64,7 @@
 }
 
 .card__security-nr {
-  color: var(--Light_grayish_violet);;
+  color: var(--Light_grayish_violet);
 }
 
 .form__container {
@@ -148,11 +148,15 @@
   cursor: pointer;
 }
 
-.end__status {
+.hide__container {
   display: none;
+}
+
+.end__status {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 .completed__title {
