@@ -11,7 +11,7 @@
 
 body {
   width: 100%;
-  background-image: url(/images/bg-main-desktop.png);
+  background-image: url(./images/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-size: 30%;
   font-size: 18px;
@@ -33,7 +33,7 @@ body {
 }
 
 .card__front {
-  background-image: url(/images/bg-card-front.png);
+  background-image: url(./images/bg-card-front.png);
   background-repeat: no-repeat;
   border-radius: 10px;
   padding: 1rem;
@@ -75,7 +75,7 @@ body {
 }
 
 .card__back {
-  background: url(/images/bg-card-back.png);
+  background: url(./images/bg-card-back.png);
   background-repeat: no-repeat;
   border-radius: 10px;
   padding-top: 7rem;
