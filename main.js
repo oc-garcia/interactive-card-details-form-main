@@ -129,6 +129,11 @@ function reset() {
   displayCardMonth.innerHTML = "00";
   displayCardYear.innerHTML = "YY";
   displayCardCvc.innerHTML = "000";
+  cardCvcInput.value == "";
+  cardYearInput.value == "";
+  cardMonthInput.value == "";
+  numberInput.value == "";
+  nameInput.value == "";
   document.getElementById("form").className = "form__container";
   document.getElementById("thanks__card").className = "hide__container";
 }
