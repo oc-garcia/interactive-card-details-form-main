@@ -145,7 +145,6 @@ body {
 }
 
 .cvc__label {
-  margin-left: 0.7rem;
   color: var(--Dark_grayish_violet);
   width: 100%;
 }
@@ -170,7 +169,12 @@ body {
 #form__cvc {
   padding: 0.5rem;
   width: 90%;
-  margin-left: 0.5rem;
+ 
+}
+
+.form__name-error {
+  color: var(--Red);
+  font-size: small;
 }
 
 .form__submit {

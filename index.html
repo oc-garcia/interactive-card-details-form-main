@@ -42,10 +42,12 @@
                 <input type="number" id="form__date-month" placeholder="MM" maxlength="2" min="01" max="12" required />
                 <input type="number" id="form__date-year" placeholder="YY" maxlength="2" min="22" max="40" required />
               </div>
+              <span class="form__name-error" id="span__date"></span>
             </div>
             <div class="inputs">
               <label class="cvc__label" for="form__cvc">CVC</label>
               <input type="number" id="form__cvc" placeholder="e.g. 123" maxlength="3" required />
+              <span class="form__name-error" id="span__cvc"></span>
             </div>
           </div>
           <button class="form__submit" type="submit" id="btn__submit">Confirm</button>
