@@ -14,7 +14,9 @@ const displayCardYear = document.getElementById("card__year");
 const displayCardCvc = document.getElementById("card__cvc");
 
 nameInput.addEventListener("input", changeName);
+nameInput.addEventListener("blur", changeName);
 numberInput.addEventListener("input", changeNumber);
+numberInput.addEventListener("blur", changeNumber);
 cardMonthInput.addEventListener("input", changeMonth);
 cardYearInput.addEventListener("input", changeYear);
 cardCvcInput.addEventListener("input", changeCVC);
@@ -23,16 +25,28 @@ btnSubmit.addEventListener("click", submitForm);
 function changeName() {
   if ((displayCardName.innerHTML = nameInput.value)) {
     displayCardName.innerHTML = nameInput.value;
+    document.getElementById("span__name").innerHTML = "";
   } else {
     displayCardName.innerHTML = "e.g. Jane Appleseed";
+    if (nameInput.value == "") {
+      document.getElementById("span__name").innerHTML = "Cant't be blank";
+    } else {
+      document.getElementById("span__name").innerHTML = "";
+    }
   }
 }
 
 function changeNumber() {
   if ((displayCardNumber.innerHTML = numberInput.value)) {
     displayCardNumber.innerHTML = numberInput.value;
+    document.getElementById("span__number").innerHTML = "";
   } else {
     displayCardNumber.innerHTML = "0000 0000 0000 0000";
+    if (numberInput.value == "") {
+      document.getElementById("span__number").innerHTML = "Cant't be blank";
+    } else {
+      document.getElementById("span__number").innerHTML = "";
+    }
   }
 }
 
