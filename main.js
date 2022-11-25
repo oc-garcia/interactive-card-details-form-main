@@ -13,6 +13,8 @@ const displayCardMonth = document.getElementById("card__month");
 const displayCardYear = document.getElementById("card__year");
 const displayCardCvc = document.getElementById("card__cvc");
 
+const resetBtn = document.getElementById("reset");
+
 nameInput.addEventListener("input", changeName);
 nameInput.addEventListener("blur", changeName);
 numberInput.addEventListener("input", changeNumber);
@@ -24,6 +26,7 @@ cardYearInput.addEventListener("blur", changeYear);
 cardCvcInput.addEventListener("input", changeCVC);
 cardCvcInput.addEventListener("blur", changeCVC);
 btnSubmit.addEventListener("click", submitForm);
+resetBtn.addEventListener("click", reset);
 
 function changeName() {
   if ((displayCardName.innerHTML = nameInput.value)) {
@@ -120,30 +123,12 @@ function submitForm() {
   }
 }
 
-/*
-function formatCardNumber(value) {
-  // remove all non digit characters
-  var value = value.replace(/\D/g, "");
-  var formattedValue;
-  var maxLength;
-  // american express, 15 digits
-  if (/^3[47]\d{0,13}$/.test(value)) {
-    formattedValue = value.replace(/(\d{4})/, "$1 ").replace(/(\d{4}) (\d{6})/, "$1 $2 ");
-    maxLength = 17;
-  } else if (/^3(?:0[0-5]|[68]\d)\d{0,11}$/.test(value)) {
-    // diner's club, 14 digits
-    formattedValue = value.replace(/(\d{4})/, "$1 ").replace(/(\d{4}) (\d{6})/, "$1 $2 ");
-    maxLength = 16;
-  } else if (/^\d{0,16}$/.test(value)) {
-    // regular cc number, 16 digits
-    formattedValue = value
-      .replace(/(\d{4})/, "$1 ")
-      .replace(/(\d{4}) (\d{4})/, "$1 $2 ")
-      .replace(/(\d{4}) (\d{4}) (\d{4})/, "$1 $2 $3 ");
-    maxLength = 19;
-  }
-
-  $("#cc").attr("maxlength", maxLength);
-  return formattedValue;
+function reset() {
+  displayCardName.innerHTML = "e.g. Jane Appleseed";
+  displayCardNumber.innerHTML = "0000 0000 0000 0000";
+  displayCardMonth.innerHTML = "00";
+  displayCardYear.innerHTML = "YY";
+  displayCardCvc.innerHTML = "000";
+  document.getElementById("form").className = "form__container";
+  document.getElementById("thanks__card").className = "hide__container";
 }
-*/
