@@ -7,11 +7,15 @@
   --Light_grayish_violet: hsl(270, 3%, 87%);
   --Dark_grayish_violet: hsl(279, 6%, 55%);
   --Very_dark_violet: hsl(278, 68%, 11%);
-  font-size: 18px;
-  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  width: 100%;
   background-image: url(/images/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-size: 30%;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .start__status {
@@ -24,15 +28,27 @@
 .card__container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
+  height: 70vh;
 }
 
 .card__front {
-  background: url(/images/bg-card-front.png);
-  padding: 2rem;
-  background-size: auto;
+  background-image: url(/images/bg-card-front.png);
   background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-right: 30%;
+  width: 75%;
+  height: 50%;
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.card__logo {
+  width: 20%;
 }
 
 .card__number {
@@ -55,12 +71,20 @@
 
 .card__date-container {
   display: flex;
+  position: relative;
 }
 
 .card__back {
   background: url(/images/bg-card-back.png);
   background-repeat: no-repeat;
+  border-radius: 10px;
+  padding-top: 7rem;
+  padding-left: 22rem;
+  width: 75%;
+  height: 50%;
+  margin-top: 5rem;
   align-self: flex-end;
+  box-sizing: border-box;
 }
 
 .card__security-nr {
