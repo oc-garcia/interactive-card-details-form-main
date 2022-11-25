@@ -13,7 +13,7 @@ body {
   width: 100%;
   background-image: url(../images/bg-main-desktop.png);
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 30% 100vh;
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
 }
@@ -94,7 +94,7 @@ body {
 .form__container {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 45%;
 }
 
 .form__name-label {
@@ -233,4 +233,65 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: 100% 20%;
+  }
+
+  .start__status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .card__container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    height: 45vh;
+    position: relative;
+  }
+
+  .card__front {
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 75%;
+    height: 50%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .card__back {
+    background: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 75%;
+    height: 50%;
+    align-self: flex-end;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 9rem;
+  }
+
+  .form__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .end__status {
+    margin-top: 2rem;
+    height: 40vh;
 }
