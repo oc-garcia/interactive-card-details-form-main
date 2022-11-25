@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
 :root {
-  --Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); /*(active input border)*/
+  --Linear_gradient: linear-gradient(45deg, #6448fe, #600594) 1; /*(active input border)*/
   --Red: hsl(0, 100%, 66%); /*(input errors)*/
   --White: hsl(0, 0%, 100%);
   --Light_grayish_violet: hsl(270, 3%, 87%);
@@ -11,7 +11,7 @@
 
 body {
   width: 100%;
-  background-image: url(images/bg-main-desktop.png);
+  background-image: url(../images/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-size: 30%;
   font-size: 18px;
@@ -33,7 +33,7 @@ body {
 }
 
 .card__front {
-  background-image: url(images/bg-card-front.png);
+  background-image: url(../images/bg-card-front.png);
   background-repeat: no-repeat;
   border-radius: 10px;
   padding: 1rem;
@@ -75,7 +75,7 @@ body {
 }
 
 .card__back {
-  background: url(images/bg-card-back.png);
+  background: url(../images/bg-card-back.png);
   background-repeat: no-repeat;
   border-radius: 10px;
   padding-top: 7rem;
@@ -169,7 +169,6 @@ body {
 #form__cvc {
   padding: 0.5rem;
   width: 90%;
- 
 }
 
 .form__name-error {
@@ -217,6 +216,15 @@ body {
   border-radius: 5px;
   width: 120%;
   border: none;
+}
+
+#form__name:focus,
+#form__number:focus,
+#form__date-month:focus,
+#form__date-year:focus,
+#form__cvc:focus {
+  border: 3px solid;
+  border-image: var(--Linear_gradient);
 }
 
 .attribution {
