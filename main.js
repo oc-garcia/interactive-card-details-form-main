@@ -36,6 +36,7 @@ function changeName() {
     displayCardName.innerHTML = "e.g. Jane Appleseed";
     if (nameInput.value == "") {
       document.getElementById("span__name").innerHTML = "Cant't be blank";
+      nameInput.className = "border__error";
     } else {
       document.getElementById("span__name").innerHTML = "";
     }
@@ -50,6 +51,7 @@ function changeNumber() {
     displayCardNumber.innerHTML = "0000 0000 0000 0000";
     if (numberInput.value == "") {
       document.getElementById("span__number").innerHTML = "Cant't be blank";
+      numberInput.className = "border__error";
     } else {
       document.getElementById("span__number").innerHTML = "";
     }
@@ -64,6 +66,7 @@ function changeMonth() {
     displayCardMonth.innerHTML = "00";
     if (cardMonthInput.value == "") {
       document.getElementById("span__date").innerHTML = "Cant't be blank";
+      cardMonthInput.className = "border__error";
     } else {
       document.getElementById("span__date").innerHTML = "";
     }
@@ -78,6 +81,7 @@ function changeYear() {
     displayCardYear.innerHTML = "YY";
     if (cardYearInput.value == "") {
       document.getElementById("span__date").innerHTML = "Cant't be blank";
+      cardYearInput.className = "border__error";
     } else {
       document.getElementById("span__date").innerHTML = "";
     }
@@ -92,6 +96,7 @@ function changeCVC() {
     displayCardCvc.innerHTML = "000";
     if (cardCvcInput.value == "") {
       document.getElementById("span__cvc").innerHTML = "Cant't be blank";
+      cardCvcInput.className = "border__error";
     } else {
       document.getElementById("span__cvc").innerHTML = "";
     }
@@ -129,11 +134,11 @@ function reset() {
   displayCardMonth.innerHTML = "00";
   displayCardYear.innerHTML = "YY";
   displayCardCvc.innerHTML = "000";
-  cardCvcInput.value == "";
-  cardYearInput.value == "";
-  cardMonthInput.value == "";
-  numberInput.value == "";
-  nameInput.value == "";
+  cardCvcInput.value = "";
+  cardYearInput.value = "";
+  cardMonthInput.value = "";
+  numberInput.value = "";
+  nameInput.value = "";
   document.getElementById("form").className = "form__container";
   document.getElementById("thanks__card").className = "hide__container";
 }

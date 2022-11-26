@@ -223,8 +223,12 @@ body {
 #form__date-month:focus,
 #form__date-year:focus,
 #form__cvc:focus {
-  border: 3px solid;
+  border: 1px solid;
   border-image: var(--Linear_gradient);
+}
+
+.border__error {
+border: 1px solid var(--Red);
 }
 
 .attribution {
