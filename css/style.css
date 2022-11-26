@@ -100,15 +100,12 @@ body {
 }
 
 .form__name-label {
-  color: var(--Dark_grayish_violet);
+  color: var(--Very_dark_violet);
+  margin-bottom: 0.3rem;
 }
 
 #form__name {
   padding: 0.5rem;
-}
-
-#form__name:active {
-  border-color: var(--Linear_gradient);
 }
 
 .form__number-label {
@@ -116,15 +113,12 @@ body {
 }
 
 .form__number-label {
-  color: var(--Dark_grayish_violet);
+  color: var(--Very_dark_viole);
+  margin-bottom: 0.3rem;
 }
 
 #form__number {
   padding: 0.5rem;
-}
-
-#form__number:hover {
-  box-shadow: var(--Linear_gradient);
 }
 
 .flex__container {
@@ -142,13 +136,15 @@ body {
 }
 
 .date__label {
-  color: var(--Dark_grayish_violet);
+  color: var(--Very_dark_viole);
   width: 100%;
+  margin-bottom: 0.3rem;
 }
 
 .cvc__label {
-  color: var(--Dark_grayish_violet);
+  color: var(--Very_dark_viole);
   width: 100%;
+  margin-bottom: 0.3rem;
 }
 
 .inputs {
@@ -170,7 +166,7 @@ body {
 
 #form__cvc {
   padding: 0.5rem;
-  width: 90%;
+  width: 93%;
 }
 
 .form__name-error {
@@ -259,7 +255,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     width: 70%;
-    height: 45vh;
+    height: 40vh;
     position: relative;
   }
 
