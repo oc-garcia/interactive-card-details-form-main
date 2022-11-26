@@ -230,7 +230,7 @@ body {
 }
 
 .border__error {
-border: 1px solid var(--Red);
+  border: 1px solid var(--Red);
 }
 
 .attribution {
@@ -266,9 +266,10 @@ border: 1px solid var(--Red);
   .card__front {
     background-image: url(../images/bg-card-front.png);
     background-repeat: no-repeat;
+    background-size: 250px;
     border-radius: 10px;
     padding: 1rem;
-    width: 75%;
+    width: 80%;
     height: 50%;
     display: flex;
     align-self: flex-start;
@@ -281,13 +282,16 @@ border: 1px solid var(--Red);
   .card__back {
     background: url(../images/bg-card-back.png);
     background-repeat: no-repeat;
+    background-size: 250px;
     border-radius: 10px;
-    width: 75%;
+    width: 80%;
     height: 50%;
     align-self: flex-end;
     box-sizing: border-box;
     position: absolute;
     bottom: 9rem;
+    padding-top: 3.7rem;
+    padding-left: 11rem;
   }
 
   .form__container {
