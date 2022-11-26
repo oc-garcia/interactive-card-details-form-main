@@ -39,7 +39,7 @@ body {
   border-radius: 10px;
   padding: 1rem;
   padding-right: 20%;
-  width: 50%;
+  width: 30%;
   height: 25%;
   align-self: flex-start;
   display: flex;
@@ -303,15 +303,15 @@ body {
     height: 40vh;
   }
 
-  #form__date-month{
+  #form__date-month {
     width: 25%;
   }
 
-  #form__date-year{
+  #form__date-year {
     width: 25%;
   }
 
-  #form__cvc{
+  #form__cvc {
     width: 89%;
   }
 }
